@@ -5,7 +5,7 @@ This is a Voxel game Like Minecraft, which is based on Unity's Perlin Noise (Sti
 
 You may use this project freely.
 
-What's Implemented
+What's Implemented?
 ------------------
 - Added SEM.cs which is short for (Static Extension Methods)
 - Added Seed Translation (look for GetSeed() in SEM.cs) to translate string letters to Int32
