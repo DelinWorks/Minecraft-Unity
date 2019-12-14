@@ -26,6 +26,7 @@ public class Chunk
         MeshCollider.transform.position = new Vector3(0, 0, 0);
         MeshCollider.AddComponent<MeshCollider>();
         MeshCollider.GetComponent<MeshCollider>().sharedMesh = mesh;
+        MeshCollider.GetComponent<MeshCollider>().tag = "ChunkCollider";
         MeshCollider.hideFlags = HideFlags.HideInHierarchy;
     }
 

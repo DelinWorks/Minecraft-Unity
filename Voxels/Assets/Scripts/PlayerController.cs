@@ -73,6 +73,13 @@ public class PlayerController : MonoBehaviour
         //if (Input.GetKey(KeyCode.Space))
         //    if (rigid.velocity.y == 0)
         //        rigid.velocity = new Vector3(rigid.velocity.x, jumpStrength, rigid.velocity.z);
+
+        if (transform.position.y < 1)
+        {
+            transform.position = new Vector3(transform.position.x, 1, transform.position.z);
+            rigid.velocity = new Vector3(0, 0, 0);
+        }
+
         rigid.velocity = new Vector3(0, rigid.velocity.y, 0);
     }
 }

@@ -15,6 +15,19 @@ public class World : MonoBehaviour
     int wseed;
     public System.Random random;
     List<Vector3Int> pendingDeletions = new List<Vector3Int>();
+
+    private void OnEnable()
+    {
+        foreach (var item in Resources.FindObjectsOfTypeAll<MeshCollider>())
+            item.gameObject.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        foreach (var item in Resources.FindObjectsOfTypeAll<MeshCollider>())
+            item.gameObject.SetActive(false);
+    }
+
     private void Awake()
     {
         int renderDistance = Snap(this.renderDistance, Chunk.size.x / 2) * 8;
