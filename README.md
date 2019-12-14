@@ -7,7 +7,7 @@ You may use this project freely.
 
 What's Implemented
 ------------------
-- Added SEM.cs which is short for (static extension methods)
+- Added SEM.cs which is short for (Static Extension Methods)
 - Added Seed Translation (look for GetSeed() in SEM.cs) to translate string letters to Int32
 - Created A Solid Player Physics And Player Controller (Not Buggy At All)
 - Added A Chunk System To Improve Performance (I was stupid to the point where i render every block as a meshRenderer but we learn from our mistakes)
