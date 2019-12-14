@@ -33,9 +33,9 @@ public class World : MonoBehaviour
         int renderDistance = Snap(this.renderDistance, Chunk.size.x / 2) * 8;
         if (seed == "")
             seed = UnityEngine.Random.Range(int.MinValue, int.MaxValue).ToString();
-        wseed = GetSeed(seed);
+        wseed = GetRawSeed(seed);
         random = new System.Random(wseed);
-        Debug.Log("Your Generated Seed: " + GetSeed(seed));
+        Debug.Log("Your Generated Seed: " + GetRawSeed(seed));
         ChunkTextureController.Initialize(Application.streamingAssetsPath + "/firstpass-texture.png", material);
         player = Camera.main.transform;
         worldGenerator = new Thread(new ThreadStart(delegate ()
