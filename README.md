@@ -15,6 +15,6 @@ What's Implemented
 - Added Support for Texture Importing to Simulate texture packs And UV Mapping
 (Texture packs are in the StreamingAssets path)
 - Added Support for Mesh Collider (mesh colliders are laggy and buggy, i will change them in the future)
-- Added Render Distance Option To The World.cs class which gets called on Start i think
+- Added Render Distance Option To The World.cs class which gets called on Start() Only, you can change it to Update when it changes :wenk:
 - Added Slobe climbing (Very cool for Stairs And Ladders)
 - Chunks are now Generated Based on the block facing which gives extra 110+ FPS!
