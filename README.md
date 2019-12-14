@@ -18,3 +18,4 @@ What's Implemented
 - Added Render Distance Option To The World.cs class which gets called on Start() Only, you can change it to Update when it Render Distance Option changes :wink:
 - Added Slobe climbing (Very cool for Stairs And Ladders)
 - Chunks are now Generated Based on the block facing which gives extra 110+ FPS!
+- Multithreaded Chunk Building, makes you see the world being created :yum:
