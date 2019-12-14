@@ -1,7 +1,7 @@
 A Voxel Game Made With Unity (2020.1.0a14)
 ========================================
 
-This is a Voxel Like Minecraft, which is based on Unity's Perlin Noise (Still Unfinished)
+This is a Voxel game Like Minecraft, which is based on Unity's Perlin Noise (Still Unfinished)
 
 You may use this project freely.
 
