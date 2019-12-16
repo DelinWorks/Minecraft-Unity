@@ -119,7 +119,7 @@ public class World : MonoBehaviour
 
         GL.Begin(GL.LINE_STRIP);
         GLMat.SetPass(0);
-        GL.Color(Color.green);
+        GL.Color(Color.red);
         foreach (var vertex in PlayerController.mesh.vertices)
             GL.Vertex(vertex);
         GL.End();
