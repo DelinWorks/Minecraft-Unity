@@ -296,7 +296,6 @@ Assets\Scripts\Block.cs
 Assets\Scripts\Chunk.cs
 Assets\Scripts\ChunkTextureController.cs
 Assets\Scripts\Direction.cs
-Assets\Scripts\FloatingOrigin.cs
 Assets\Scripts\MeshBuilder.cs
 Assets\Scripts\OnCollisionAction.cs
 Assets\Scripts\PlayerController.cs

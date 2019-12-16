@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
         rigid = GetComponent<Rigidbody>();
     }
 
+    public static Mesh mesh;
+    private void OnCollisionStay(Collision collision) => mesh = collision.collider.gameObject.GetComponent<MeshCollider>().sharedMesh;
+
     float _rotX;
     float _rotY;
     void Update()

@@ -22,7 +22,7 @@ public class Chunk
             return;
         isColliderBaked = true;
 
-        MeshCollider = new GameObject($"Chunk (x:{position.x}, z:{position.z}) Collider");
+        MeshCollider = new GameObject($"Chunk x:{position.x}, z:{position.z}");
         MeshCollider.transform.position = new Vector3(0, 0, 0);
         MeshCollider.AddComponent<MeshCollider>();
         MeshCollider.GetComponent<MeshCollider>().sharedMesh = mesh;

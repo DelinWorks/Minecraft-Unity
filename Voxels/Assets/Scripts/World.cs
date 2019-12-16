@@ -7,8 +7,10 @@ using static SEM;
 public class World : MonoBehaviour
 {
     public Material material;
+    public Material GLMat;
     public string seed = "";
     public int renderDistance = 16;
+    public bool drawDebugLines = false;
 
     Thread worldGenerator;
     Dictionary<Vector3Int, Chunk> chunks = new Dictionary<Vector3Int, Chunk>();
@@ -108,5 +110,18 @@ public class World : MonoBehaviour
                 chunk.Render(material);
         }
         catch (Exception) { goto tryAgain; }
+    }
+
+    private void OnPostRender()
+    {
+        if (PlayerController.mesh == null || !drawDebugLines)
+            return;
+
+        GL.Begin(GL.LINE_STRIP);
+        GLMat.SetPass(0);
+        GL.Color(Color.green);
+        foreach (var vertex in PlayerController.mesh.vertices)
+            GL.Vertex(vertex);
+        GL.End();
     }
 }
